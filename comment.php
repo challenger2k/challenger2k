@@ -1,3 +1,6 @@
+<!--Student Name: Thanh Nhan Nguyen
+	Student ID: 212540002
+-->
 <?php
 	echo $_POST['rn'];
 	echo $_POST['rating'];
