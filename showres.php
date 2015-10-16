@@ -1,6 +1,3 @@
-<!--Student Name: Thanh Nhan Nguyen
-	Student ID: 212540002
--->
 <?php
 	$food = $_GET['f'];
 	$loc = $_GET['l'];
@@ -45,21 +42,22 @@
 	<script src="js/jquery.mobile-1.0.1.min.js"></script>
 </head> 
 <body> 
-<div id="choisir_restau" data-role="page" data-add-back-btn="true">
+<div id="choisir_restau" class="mainShowres" data-role="page" data-add-back-btn="false">
 	
-	<div data-role="header"> 
-		<h1> Restaurant Picker</h1>
+	<div data-role="header">
+		<a class="btnBack" href="javascript:(history.length > 1) ? history.back() : window.location = 'index.php';" data-transition="slideup"></a> 
+		<h1 class="clWhite"> Restaurant Picker</h1>
 	</div> 
 
 	<div data-role="content">
 	
 	<div class="choice_list"> 
-	<h1> Please choose a restaurant.</h1>
+	<h1 class="title-lg clWhite"> Please choose a restaurant.</h1>
 	
-	<ul data-role="listview" data-inset="true" >
+	<ul class="parent-foodlist" data-role="listview" data-inset="true" >
 	<!--<li><a href="restaurant.html" data-transition="slidedown"> <img src="restau01_mini.jpg"/> <h2> Le Mouffetard</h2> <p class="classement four"> 4 stars  </p></a></li>-->
 	<?php foreach($res as $n) { ?>
-			<li>
+			<li class="item-foodlist">
 			<a href="showresinfo.php?rn=<?php echo rawurlencode(strtolower($n)); ?>" data-transition="slidedown">
 			<?php foreach ($resinfo as $info) {
 				if(strtolower($info->name) == strtolower($n)) {

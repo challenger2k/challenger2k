@@ -1,6 +1,3 @@
-<!--Student Name: Thanh Nhan Nguyen
-	Student ID: 212540002
--->
 <!DOCTYPE html> 
 <html> 
 	<head>
@@ -25,16 +22,37 @@
 	
 	<div id="branding">
 		<h1>Restaurant Picker </h1>
+		<a class="info" href="intro.php"><span class="icoInfo"></span></a>
 	</div>
 	
 	<div class="choice_list"> 
 	<h1> What would you'd like to eat? </h1>
 	
 	<ul data-role="listview" data-inset="true" class="reshome">
-	<li><a href="showloc.php?f=sushi" data-transition="slidedown"> <img src="./img/sushis.jpg"/> <h3> Sushi</h3></a></li>
-	<li><a href="showloc.php?f=pizza"  data-transition="slidedown"> <img src="./img/pizza.jpg"/> <h3> Pizza </h3></a></li>
-	<li><a href="showloc.php?f=burger"  data-transition="slidedown"> <img src="./img/burger.jpg"/> <h3> Burger</h3></a></li>
-	<li><a href="showloc.php?f=pho"  data-transition="slidedown"> <img src="./img/pho5.jpg"/> <h3> Pho</h3></a></li>
+		<li>
+			<a class="shushi-hp" href="showloc.php?f=sushi" data-transition="slidedown"> 
+			<!--<img src="./img/sushis.jpg"/> -->
+			<h3> Sushi</h3>
+			</a>
+		</li>
+		<li>
+			<a class="pizza-hp" href="showloc.php?f=pizza"  data-transition="slidedown"> 
+			<!--<img src="./img/pizza.jpg"/> -->
+			<h3> Pizza </h3>
+			</a>
+		</li>
+		<li>
+			<a class="burger-hp" href="showloc.php?f=burger"  data-transition="slidedown"> 
+			<img src="./img/burger.jpg"/>
+			<h3> Burger</h3>
+			</a>
+		</li>
+		<li>
+			<a class="pho-hp" href="showloc.php?f=pho"  data-transition="slidedown"> 
+			<!--<img src="./img/pho5.jpg"/> -->
+			<h3> Pho</h3>
+			</a>
+		</li>
 	<!--<li><a href="choose_town.html"  data-transition="slidedown"> <img src="nems.jpg"/> <h3> Some Nems </h3></a></li>
 	<li><a href="choose_town.html"  data-transition="slidedown"> <img src="tradi.jpg"/> <h3> Something more traditional</h3></a></li>-->	
 	</ul>	

@@ -1,6 +1,3 @@
-<!--Student Name: Thanh Nhan Nguyen
-	Student ID: 212540002
--->
 <?php
 	$food = empty($_GET['f']) ? '' : $_GET['f'];
 	$url = './db/data.json';
@@ -39,9 +36,10 @@
 	<script src="js/jquery.mobile-1.0.1.min.js"></script>
 </head> 
 <body> 
-<div id="choisir_ville" data-role="page" data-add-back-btn="true">
+<div id="choisir_ville" data-role="page" data-add-back-btn="false">
 	
 	<div data-role="header"> 
+		<a class="btnBack" href="javascript:(history.length > 1) ? history.back() : window.location = 'index.php';" data-transition="slideup"></a>
 		<h1> Restaurant Picker</h1>
 	</div> 
 
@@ -50,10 +48,10 @@
 	<div class="choice_list"> 
 	<h1> In which town do you want to eat? </h1>
 	
-	<ul data-role="listview" data-inset="true" data-filter="true"  class="ctown">
+	<ul class="parent-foodlist" data-role="listview" data-inset="true" data-filter="true"  class="ctown">
 		<!--<li><a href="choose_restaurant.html"  data-transition="slidedown"> Amiens <span class="ui-li-count" > 3 </span></a> </li>-->
 		<?php foreach($location as $locname) { ?>
-				<li>
+				<li class="item-foodlist">
 				<a href="showres.php?f=<?php echo $food; ?>&l=<?php echo strtolower($locname) ?>"  data-transition="slidedown">
 				<?php echo $locname;?>
 				<!--<span class="ui-li-count" > 3 </span>-->

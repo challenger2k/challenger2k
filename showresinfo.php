@@ -1,6 +1,3 @@
-<!--Student Name: Thanh Nhan Nguyen
-	Student ID: 212540002
--->
 <?php
 	$restaurant = $_GET['rn'];
 	$restaurant = empty($restaurant) ? '' : $restaurant;
@@ -26,12 +23,12 @@
 	<link rel="stylesheet" href="custom.css" />
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.0.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.validate.js"></script>
 </head> 
 <body> 
-<div id="restau" data-role="page" data-add-back-btn="true">
+<div id="restau" data-role="page" data-add-back-btn="false">
 	
-	<div data-role="header"> 
+	<div data-role="header">
+		<a class="btnBack" href="javascript:(history.length > 1) ? history.back() : window.location = 'index.php';" data-transition="slideup"></a>
 		<h1> Restaurant Picker</h1>
 	</div> 
 	
@@ -63,23 +60,26 @@
 					<div id="choisir_restau">
 						<p class="classement <?php echo $rating; ?>" style="margin-left: 0px"><?php echo $info->rating; ?></p>
 					</div>
-					<p>Location: </p>
-					<ul>
-				<?php foreach($info->location as $l) { ?>
-						<li> <?php echo $l->name; ?></li>
-				<?php } ?>
-					</ul>
-					<p> On the menu: </p>
-					<ul>
-				<?php foreach($info->food as $f) { ?>
-						<li><?php echo $f->name; ?></li>
-				<?php } ?>
-					</ul>
+					<div class="clbt">
+						<!--<p>Location: </p>-->
+						<ul class="fl location-brd">
+					<?php foreach($info->location as $l) { ?>
+							<li> <em class="ico-location fl"></em> <?php echo $l->name; ?></li>
+					<?php } ?>
+						</ul>
+						<!--<p> On the menu: </p>-->
+						<ul class="fl menu-brd">
+					<?php foreach($info->food as $f) { ?>
+							<li><em class="ico-menu fl"></em><?php echo $f->name; ?></li>
+					<?php } ?>
+						</ul>
+					</div>
 				<?php	
 					break;
 				}
 			}
-		?>	
+		?>
+		<a class="btn-order" href="showfoodlist.php?rn=<?php echo rawurlencode(strtolower($restaurant)); ?>" data-transition="slidedown"></a>
 		</div>
 		<!-- end food and location -->
 		<!-- shop image & website -->
@@ -102,7 +102,7 @@
 				foreach($resinfo as $info) {
 					if(strtolower($info->name) == $restaurant) {
 			?>
-						<a href="<?php echo $info->website; ?>" rel="external" data-role="button"> See our website</a>
+						<a class="btnLightBlue" href="<?php echo $info->website; ?>" rel="external" data-role="button"> See our website</a>
 			<?php
 						break;
 					}
@@ -112,8 +112,7 @@
 		</div>
 		<!-- end shop image & website -->
 	</div><!-- /grid-a -->
-	<hr/>
-	
+	<div class="topShoresinfo">
 	<div class="ui-grid-a" id="contact_infos">	
 		<h2> Contact us</h2>
 		<!--<div class="ui-block-a">
@@ -147,7 +146,7 @@
 	</div><!-- /grid-a -->
 	<div id="contact_buttons">
 		<!--<a href="http://maps.google.fr/maps?q=jeannette+et+les+cycleux&hl=fr&sll=46.75984,1.738281&sspn=10.221882,18.764648&hq=jeannette+et+les+cycleux&t=m&z=13&iwloc=A" data-role="button" data-icon="maps"> Find us on Google Maps </a> 	-->
-		<a href="tel:<?php echo $tel ?>"  data-role="button" data-icon="tel"> Call us </a>	
+		<a class="btnBlue clRed" href="tel:<?php echo $tel ?>"  data-role="button" data-icon="tel"> Call us </a>	
 	</div>
 	<hr/>
 	<div id="commentbox">
@@ -173,7 +172,7 @@
 		?>
 						<div class="grp-cmt">
 							<div class="clbt author-cmt">
-								<div class="name-cmt fl"><?php echo $i->name; ?></div>
+								<div class="name-cmt fl fntBold clDark"><?php echo $i->name; ?></div>
 								<div id="choisir_restau" class="rating-cmt fr">
 									<p class="classement <?php echo $rating; ?>" style="margin-left: 0px"><?php echo $i->rating; ?></p>
 								</div>
@@ -189,20 +188,21 @@
 	</div>
 	<div id="notation">	
 	<form id="commentfrm"  data-ajax="false">
-	<label for="select-choice-0" class="select"><h2> User rating </h2></label>
+	<label for="select-choice-0" class="select"><h2 class="titleNormal"> User rating </h2></label>
 		<select id="note_utilisateur" data-native-menu="false" data-theme="c" name="rating">
 		   <option value="1" class="one"> Not good at all </option>
 		   <option value="2" class="two">Average </option>
 		   <option value="3" class="three">Pretty good </option>
 		   <option value="4" class="four"> Excellent </option>
 		</select>
-		<input type="text" placeholder="Enter your name here!" name="author" id="txtauthor"/>
+		<input class="bgWhite" type="text" placeholder="Enter your name here!" name="author" id="txtauthor"/>
 		<span class="textError hidden" id="txtauthor_err">Required field</span>
 		<input type="hidden" name="rn" value="<?php echo rawurlencode($restaurant); ?>"/>
-		<textarea rows="4" name="comment" placeholder="Enter your comment here!" id="txtcomment"></textarea>
+		<textarea class="bgWhite" rows="4" name="comment" placeholder="Enter your comment here!" id="txtcomment"></textarea>
 		<span class="textError hidden" id="txtcmt_err">Required field</span>
 		<input class="btn-submit" type="submit" name="submit" value="Submit" id="commentsubmit">
 	</form>
+	</div>
 	</div>
 
 

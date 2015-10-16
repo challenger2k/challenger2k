@@ -1,0 +1,96 @@
+{
+    "foods": {
+        "Sushi": {
+            "prefix": "su",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Sake Nigirihi (Salmon)",
+                    "price": 20,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Maguro Nigiri (Tuna)",
+                    "price": 25,
+                    "image": "./img/food/maguro-sushi-205.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Uni (Gonad of Sea urchin )",
+                    "price": 30,
+                    "image": "./img/food/uni-sushi-205.jpg"
+                }
+            ]
+        },
+        "Pho": {
+            "prefix": "ph",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Pho A",
+                    "price": 20,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Pho B",
+                    "price": 25,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Pho C",
+                    "price": 30,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                }
+            ]
+        },
+        "Burger": {
+            "prefix": "bur",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Chicken Burger",
+                    "price": 20,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Beef Burger",
+                    "price": 25,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Cheese Burger",
+                    "price": 30,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                }
+            ]
+        },
+        "Pizza": {
+            "prefix": "pz",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Pizza Large",
+                    "price": 20,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Pizza Medium",
+                    "price": 25,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Pizza Small",
+                    "price": 30,
+                    "image": "./img/food/sake-sushi-205.jpg"
+                }
+            ]
+        }
+    }
+}

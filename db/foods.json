@@ -1,0 +1,264 @@
+{
+    "foods": {
+        "Sushi": {
+            "prefix": "su",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Nigiri Salmon",
+                    "price": 14,
+                    "image": "./img/food/NigiriSalmon.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Aburi Wagyu",
+                    "price": 25,
+                    "image": "./img/food/AburiWagyu.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Aburi Salmon",
+                    "price": 20,
+                    "image": "./img/food/AburiSalmon.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Sunset Roll",
+                    "price": 20,
+                    "image": "./img/food/SunsetRoll.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "California Roll",
+                    "price": 12,
+                    "image": "./img/food/CaliforniaRoll.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "Hand Roll",
+                    "price": 20,
+                    "image": "./img/food/HandRoll.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Salmon and Ikura Ship",
+                    "price": 35,
+                    "image": "./img/food/SalmonandIkuraShip.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "Tobiko Ship(Flying Fish Roe)",
+                    "price": 35,
+                    "image": "./img/food/TobikoShip.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "Salmon Sashimi",
+                    "price": 35,
+                    "image": "./img/food/SalmonSashimi.jpg"
+                },
+                {
+                    "id": 10,
+                    "name": "Mix Sashimi",
+                    "price": 40,
+                    "image": "./img/food/MixSashimi.jpg"
+                }
+            ]
+        },
+        "Pho": {
+            "prefix": "ph",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Rare Beef Noodle Soup(Pho Tai)",
+                    "price": 16,
+                    "image": "./img/food/RareBeef.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Sliced Beef and Fat Noodle Soup(Pho Tai Gau)",
+                    "price": 15,
+                    "image": "./img/food/BeefFat.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Beef Ball Noodle Soup(Pho Bo Vien)",
+                    "price": 18,
+                    "image": "./img/food/BeefBall.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Sliced Beef and Brisket Noodle Soup(Pho Tai Nam)",
+                    "price": 16,
+                    "image": "./img/food/BrisketBeef.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Sliced Beef and Tendon Noodle Soup(Pho Tai Gan)",
+                    "price": 14,
+                    "image": "./img/food/BeefTendon.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "Chicken Giblets and Livers Noodle Soup(Pho Long Ga)",
+                    "price": 14,
+                    "image": "./img/food/ChickenGiblet.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Special Chicken Noodle Soup(Pho Ga)",
+                    "price": 13,
+                    "image": "./img/food/SpecialChicken.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "Ox Tail Noodle Soup(Pho Duoi Bo)",
+                    "price": 20,
+                    "image": "./img/food/OxTail.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "Beef Stew Noodle Soup(Bo kho)",
+                    "price": 17,
+                    "image": "./img/food/BeefStew.jpg"
+                },
+                {
+                    "id": 10,
+                    "name": "Mix Beef Chicken Noodle Soup(Pho Bo Ga)",
+                    "price": 15,
+                    "image": "./img/food/MixBeefChicken.jpg"
+                }
+            ]
+        },
+        "Burger": {
+            "prefix": "bur",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Mighty Burger",
+                    "price": 12,
+                    "image": "./img/food/Mighty.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Double Quarter Pounder Burger",
+                    "price": 15,
+                    "image": "./img/food/DoubleQuarterPounder.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Grand Angus Burger",
+                    "price": 20,
+                    "image": "./img/food/GrandAngus.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Double Cheese Burger",
+                    "price": 18,
+                    "image": "./img/food/DoubleCheese.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Big Mac Burger",
+                    "price": 16,
+                    "image": "./img/food/BigMac.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "McChicken Burger",
+                    "price": 16,
+                    "image": "./img/food/McChicken.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Crispy Chicken Snack Wrap",
+                    "price": 16,
+                    "image": "./img/food/CrispyChickenWrap.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "Filet Fish Burger",
+                    "price": 20,
+                    "image": "./img/food/FiletFish.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "ChickenMcNuggets",
+                    "price": 15,
+                    "image": "./img/food/ChickenMcNuggets.jpg"
+                },
+                {
+                    "id": 10,
+                    "name": "French Fries",
+                    "price": 10,
+                    "image": "./img/food/FrenchFries.jpg"
+                }
+            ]
+        },
+        "Pizza": {
+            "prefix": "pz",
+            "details": [
+                {
+                    "id": 1,
+                    "name": "Meat Lovers Pizza",
+                    "price": 20,
+                    "image": "./img/food/MeatLover.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Hawaiian Pizza",
+                    "price": 25,
+                    "image": "./img/food/Hawaiian.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Margarita Pizza",
+                    "price": 30,
+                    "image": "./img/food/Margarita.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Seafood Pizza",
+                    "price": 35,
+                    "image": "./img/food/Seafood.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Pepperoni Pizza",
+                    "price": 20,
+                    "image": "./img/food/Pepperoni.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "Mexicana Pizza",
+                    "price": 30,
+                    "image": "./img/food/Mexicana.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Capriccio Pizza",
+                    "price": 35,
+                    "image": "./img/food/Capriccio.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "MongolianBbq Pizza",
+                    "price": 35,
+                    "image": "./img/food/MongolianBbq.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "Vegetarian Pizza",
+                    "price": 30,
+                    "image": "./img/food/Vegetarian.jpg"
+                },
+                {
+                    "id": 10,
+                    "name": "Supreme Pizza",
+                    "price": 25,
+                    "image": "./img/food/Supreme.jpg"
+                }
+            ]
+        }
+    }
+}
